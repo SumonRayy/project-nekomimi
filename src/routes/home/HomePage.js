@@ -8,7 +8,7 @@ function Homepage() {
     return (
         <div className='homepage'>
             <NavBar />
-            {/* <HomeVideos /> */}
+            <HomeVideos />
         </div>
     )
 }
