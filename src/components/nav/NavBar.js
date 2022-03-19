@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import './Nav.css'
+import NavIcons from './NavIcons'
 
 function NavBar() {
     return (
@@ -15,12 +16,7 @@ function NavBar() {
                 <input className='search-txt' type="text" name="" placeholder="Type to search" />
                 <button className='search-btn'><i className="fas fa-search"></i></button>
             </div>
-            <div className='menu-icons'>
-                <i className="fas fa-bell"></i>
-                <i className="fas fa-wallet"></i>
-                <i className="fas fa-user"></i>
-            </div>
-
+            <NavIcons user={false} />
         </div>
     )
 }
