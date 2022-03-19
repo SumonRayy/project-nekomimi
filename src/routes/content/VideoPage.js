@@ -26,8 +26,8 @@ function VideoPage() {
                             <ReactPlayer
                                 ref={playerRef}
                                 url={video.url}
-                                width='50em'
-                                height='28.125em'
+                                width='55em'
+                                height='30.9375em'
                             />
                             <div className='video-controls'>
                                 <div className='video-controls-top'>
@@ -62,7 +62,6 @@ function VideoPage() {
                                             <i className="fa-solid fa-expand"></i>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
