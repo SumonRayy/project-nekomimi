@@ -6,6 +6,7 @@ import { videoArray } from '../../data/videoData'
 import NavBar from '../../components/nav/NavBar'
 
 import './Content.css'
+import { commentData } from '../../data/commentData'
 
 function VideoPage() {
 
@@ -105,7 +106,36 @@ function VideoPage() {
                         {/* <p>{video.description}</p> */}
                     </div>
                     <div className='video-comments'>
+                        <div className='video-comments-header'>
+                            <img src={video.channelLogo} alt={video.channel.name} />
+                            <input type='text' placeholder='Add a comment...' />
+                            <button>Post</button>
+                        </div>
+                        <div className='video-comments-list'>
+                            <h4>
+                                Comment Section
+                            </h4>
+                            {
+                                commentData.map(comment => {
+                                    return (
+                                        <div className='video-comments-item' key={comment.id}>
+                                            <div className='video-comments-item-top'>
+                                                <img src={comment.userImage} alt={comment.user} />
 
+                                                <h5>{comment.user}</h5>
+                                                <span>
+                                                    {comment.time}
+                                                </span>
+
+                                            </div>
+                                            <div className='video-comments-item-bottom'>
+                                                <p>{comment.comment}</p>
+                                            </div>
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
                     </div>
                 </div>
                 <div className='video-page-right'>
