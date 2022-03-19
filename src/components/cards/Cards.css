@@ -20,9 +20,6 @@
     filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25)) drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
 }
 
-.videoCard-image > img:hover {
-    
-}
 
 .videoCard-image > img:on {
     opacity: 1;

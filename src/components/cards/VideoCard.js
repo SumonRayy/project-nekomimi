@@ -16,7 +16,6 @@ function VideoCard(props) {
     } = props
 
     const onClickRedirect = () => {
-        window.location.href = video
     }
 
     return (

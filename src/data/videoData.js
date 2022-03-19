@@ -3,6 +3,7 @@ export const videoArray = [
         id: 1,
         image: 'https:i.ytimg.com/vi/tv-_1er1mWI/hqdefault.jpg',
         title: '10 Design Patterns Explained in 10 Minutes',
+        description: 'Software design patterns help developers to solve common recurring problems with code. Let\'s explore 10 patterns from the famous Gang of Four book and implement them with JavaScript and TypeScript https://fireship.io/lessons/typescrip...',
         channel: 'Fireship',
         channelLogo: 'https://yt3.ggpht.com/ytc/AKedOLTcIl6kKt3lEPJEySUf_hpHiKDKiFeo9eWPReLysQ',
         views: '139K',
@@ -53,7 +54,7 @@ export const videoArray = [
         likes: '8.2K',
         duration: '1:11:21',
         url: 'https://youtu.be/xfdue4jdow0'
-    },
+    }
     // {
     //     id: 3,
     //     image: 'https://i.ytimg.com/vi/99KxEdLMT3g/hqdefault.jpg',
