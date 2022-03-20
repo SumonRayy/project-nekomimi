@@ -38,7 +38,7 @@ function NavIcons() {
         if (route === 'profile') {
             history.push('/profile' + (id ? '/' + id : ''))
         } else if (route === 'dashboard') {
-            history.push('/dashboard' + (id ? '/' + id : ''))
+            history.push('/channel' + (id ? '/' + id : ''))
         } else {
             history.push('/')
         }
@@ -57,7 +57,7 @@ function NavIcons() {
                                 <div className='user-menu'>
                                     <div className='user-menu-header'>
                                         {account.address.slice(0, 10) + '...'}
-                                        <a onClick={() => handleRoutes('profile', account.address)}>
+                                        <a href={`/profile/${account.address}`}>
                                             Manage Account
                                         </a>
                                     </div>

@@ -23,6 +23,8 @@
   --font-text: 'Montserrat', sans-serif;
   --font-title: 'Quicksand', sans-serif;
 
+  --filter-ds: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25)) drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.25));
+  --filter-ds-hover: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.5)) drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.5));
 }
 
 body {

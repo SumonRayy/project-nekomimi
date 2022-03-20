@@ -11,8 +11,7 @@ function VideoCard(props) {
         channelLogo,
         views,
         likes,
-        duration,
-        video
+        duration
     } = props
 
     const onClickRedirect = () => {
