@@ -12,7 +12,7 @@ function Routes() {
                 <Route exact path="/" component={Homepage} />
                 <Route path="/video/:id" component={VideoPage} />
                 <Route path="/profile/:id" component={ProfilePage} />
-                <Route path="/dashboard/:id" component={Dashboard} />
+                <Route path="/channel/:id" component={Dashboard} />
             </Switch>
         </Router>
     )
