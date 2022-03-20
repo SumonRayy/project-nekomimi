@@ -48,8 +48,13 @@ function ProfilePage() {
                             </h1>
                             <h3 onClick={() => {
                                 navigator.clipboard.writeText(userId)
-                            }}>
+                            }}
+                                className="tooltip"
+                            >
                                 <i>
+                                    <span className="tooltiptext">
+                                        Click to copy
+                                    </span>
                                     {userId}
                                 </i>
                                 <i className="fas fa-copy" ></i>
@@ -97,7 +102,7 @@ function ProfilePage() {
                 </div>
 
             </div>
-        </div>
+        </div >
     )
 }
 
