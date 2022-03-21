@@ -4,6 +4,7 @@ import VideoPage from './content/VideoPage'
 import Homepage from './home/HomePage'
 import Dashboard from './profile/Dashboard'
 import ProfilePage from './profile/ProfilePage'
+import SearchPage from './search/SearchPage'
 import UploadPage from './upload/UploadPage'
 
 function Routes() {
@@ -15,6 +16,7 @@ function Routes() {
                 <Route path="/profile/:id" component={ProfilePage} />
                 <Route path="/channel/:id" component={Dashboard} />
                 <Route path="/upload" component={UploadPage} />
+                <Route path="/search/:query" component={SearchPage} />
             </Switch>
         </Router>
     )

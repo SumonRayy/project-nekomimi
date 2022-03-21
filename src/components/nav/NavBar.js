@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom'
 
 import './Nav.css'
 import NavIcons from './NavIcons'
+import SearchBar from './SearchBar'
 
-function NavBar() {
+function NavBar({ query }) {
     return (
         <div className='navbar'>
             <div className='App-brand'>
@@ -12,10 +13,9 @@ function NavBar() {
                     <img src="/logo.svg" alt="logo" />
                 </Link>
             </div>
-            <div className='search-box'>
-                <input className='search-txt' type="text" name="" placeholder="Type to search" />
-                <button className='search-btn'><i className="fas fa-search"></i></button>
-            </div>
+            <SearchBar
+                query={query}
+            />
             <NavIcons user={false} />
         </div>
     )
