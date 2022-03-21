@@ -35,7 +35,9 @@ function Dashboard() {
                         </button>
                     </div>
                     <div className='dashboard-header-right'>
-                        <button className='upload-button'>
+                        <button className='upload-button'
+                            onClick={() => handleRoutes('/upload')}
+                        >
                             <i className="fas fa-upload"></i>
                             Upload
                         </button>

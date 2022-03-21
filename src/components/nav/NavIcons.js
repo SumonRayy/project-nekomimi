@@ -39,6 +39,8 @@ function NavIcons() {
             history.push('/profile' + (id ? '/' + id : ''))
         } else if (route === 'dashboard') {
             history.push('/channel' + (id ? '/' + id : ''))
+        } else if (route === 'upload') {
+            history.push('/upload')
         } else {
             history.push('/')
         }
@@ -50,7 +52,7 @@ function NavIcons() {
                 user ? (
                     <div className='menu-icons'>
                         <i className="fas fa-bell"></i>
-                        <i className="fas fa-upload"></i>
+                        <i className="fas fa-upload" onClick={() => handleRoutes('upload')}></i>
                         <i className="fas fa-user" onClick={handleAccount}></i>
                         {
                             userMenu ? (
